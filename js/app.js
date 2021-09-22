@@ -1,7 +1,7 @@
 // iniciamos la aplicacion
 
 var url = window.location.href;
-var swLocation = 'twittor/sw.js';
+var swLocation = '/twittor/sw.js';
 
 // llamada al service worker
 
