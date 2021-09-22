@@ -1,3 +1,5 @@
 # Twittor, si, con O
 
-Un cascarón de chat usando jQuery para PWAs
+Un sistema de chat usando jQuery para PWAs
+
+curso tomado en sept. 2021
