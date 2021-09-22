@@ -1,10 +1,9 @@
 // importaciones
-var url = window.location.href;
 var auxLocation = '/twittor/js/sw-utils.js';
 
-if (url.includes('localhost')) {
-    auxLocation = '/js/sw-utils.js';
-}
+// if (url.includes('localhost')) {
+//     auxLocation = '/js/sw-utils.js';
+// }
 
 importScripts(auxLocation);
 

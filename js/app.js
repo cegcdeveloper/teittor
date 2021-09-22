@@ -3,6 +3,8 @@
 var url = window.location.href;
 var swLocation = '/twittor/sw.js';
 
+console.log(url);
+
 // llamada al service worker
 
 if ( navigator.serviceWorker ) {
