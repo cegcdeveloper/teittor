@@ -1,5 +1,12 @@
 // importaciones
-importScripts('/js/sw-utils.js');
+var url = window.location.href;
+var auxLocation = '/twittor/js/sw-utils.js';
+
+if (url.includes('localhost')) {
+    auxLocation = '/js/sw-utils.js';
+}
+
+importScripts(auxLocation);
 
 const STATIC_CACHE    = 'static-v1';
 const DYNAMIC_CACHE   = 'dynamic-v1';
