@@ -1,7 +1,7 @@
-// Este es el Service Worker de Producción...
+// Este es el Service Worker para Desarrollo...
 
 // importaciones
-var auxLocation = '/twittor/js/sw-utils.js';
+var auxLocation = '/js/sw-utils.js';
 
 importScripts(auxLocation);
 
@@ -10,26 +10,26 @@ const DYNAMIC_CACHE   = 'dynamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
 
 const APP_SHELL = [
-    '/twittor/',
-    '/twittor/index.html',
-    '/twittor/css/style.css',
-    '/twittor/img/favicon.ico',
-    '/twittor/img/avatars/spiderman.jpg',
-    '/twittor/img/avatars/ironman.jpg',
-    '/twittor/img/avatars/wolverine.jpg',
-    '/twittor/img/avatars/thor.jpg',
-    '/twittor/img/avatars/hulk.jpg',
-    '/twittor/js/app.js',
-    '/twittor/js/sw-utils.js',
-    '/twittor/manifest.json'
+    '/',
+    '/index.html',
+    '/css/style.css',
+    '/img/favicon.ico',
+    '/img/avatars/spiderman.jpg',
+    '/img/avatars/ironman.jpg',
+    '/img/avatars/wolverine.jpg',
+    '/img/avatars/thor.jpg',
+    '/img/avatars/hulk.jpg',
+    '/js/app.js',
+    '/js/sw-utils.js',
+    '/manifest.json'
 ];
 
 const APP_SHELL_INMUTABLE = [
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
     'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-    '/twittor/css/animate.css',
-    '/twittor/js/libs/jquery.js'
+    '/css/animate.css',
+    '/js/libs/jquery.js'
 ];
 
 self.addEventListener( 'install', e => {
@@ -76,7 +76,6 @@ self.addEventListener( 'fetch', e => {
     e.respondWith(respuesta);
 
 });
-
 
 
 

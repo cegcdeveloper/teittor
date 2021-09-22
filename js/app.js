@@ -3,19 +3,19 @@
 var url = window.location.href;
 var swLocation = '/twittor/sw.js';
 
-console.log(url);
+console.log(url );
 
 // llamada al service worker
 
 if ( navigator.serviceWorker ) {
 
-    if (url.includes('localhost')) {
-        swLocation = '/sw.js';
+    if ( url.includes('localhost' ) ) {
+        swLocation = '/swdev.js';
     }
 
-    console.log(swLocation);
+    console.log(swLocation );
 
-    navigator.serviceWorker.register(swLocation);
+    navigator.serviceWorker.register(swLocation );
 
 }
 
