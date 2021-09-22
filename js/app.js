@@ -11,6 +11,8 @@ if ( navigator.serviceWorker ) {
         swLocation = '/sw.js';
     }
 
+    console.log(swLocation);
+
     navigator.serviceWorker.register(swLocation);
 
 }
